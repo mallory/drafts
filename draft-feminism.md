@@ -199,7 +199,17 @@ informative:
 
 This document aims to describe how internet standards, protocols and their implementations may impact diverse groups and communities. The research on how some protocols can be enablers for specific human rights while possibly restricting others has been documented in {{RFC8280}}. Similar to how RFC 8280 has taken a human rights lens through which to view engineering and design choices by internet standardisation, this document addresses the opportunities and vulnerabilities embedded within internet protocols for specific, traditionally marginalized groups.
 
-This is still a work in progress so many sections are yet to be done.
+--- middle
+
+# Introduction
+
+As pointed in {{RFC8280}}, IETF’s purpose of the Internet to be a global network of networks, and the strong commitment to security and privacy in its architectural design have contributed to strengthening the Internet as an enabling environment for human rights. Privacy {{RFC6973}} and Human Rights {{RFC8280}} considerations are valuable tools for decisions on protocols design and deployment, taking into account that a specific technology might be a strong enabler of a specific human right while having an adverse impact on another, as well as that sometimes human rights can be in conflict with each other and in such cases the different affected rights need to be balanced.
+
+As a complement to those approaches, this document takes a look on how Internet protocols design and standarization processes relate to the differential ability of several groups and communities to exercise their rights on the Internet. For this analysis, a feminist theoretical and practical framework is used to focus, firstly on how the uses of the Internet by individuals and groups are determined by social, economic, cultural and physical differences, and secondly, on the alternatives that some traditionally maginalized groups have found to use, apropriate and implement digital technologies, to ensure that their rights are recognized and protected on the Internet. 
+
+In contrast with {{RFC8280}}, based on a a set of Internet related human rights that should be guareteed, this document focuses on the existing structural barriers for some groups and communities to succesfully enjoy their rights on the Internet. Thus, the expected equality declared in {{UDHR}} is not taken for granted; the main focus here is rather on the differences across a variety of lived experiences and identities related to Internet uses. On the other hand, based on a document called The Feminist Principles of the Internet {{FPI}}, this document aims to identify to what extent it is possible to contribute in the inclusion of traditionally maginalized groups inside IETF, as stated in {{RFC7704}} and {{RFC7776}}, regarding different social locations as gender, race and class, among others.
+
+This document must not be understood as a set of rules or recommendations, but as an articulation of technical key issues with feminist policies and approaches. Its goal is to offer a freamework of understanding built by marginalized groups to feed ongoing conversations arround diversity, oppression, and the need to make the IETF a more inclusive enviroment.
 
 ## An intersectional perspective
 
