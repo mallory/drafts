@@ -1,4 +1,4 @@
-# Building drafts for HRPC
+# Building the draft
 
 Install dependencies:
 
