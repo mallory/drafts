@@ -1,8 +1,8 @@
 ---
 title: Feminism and protocols
 abbrev: Feminism
-docname: draft-guerra-feminism-01
-date: 2019-07-08
+docname: draft-guerra-feminism-02
+date: 2021-11-10
 category: info
 
 ipr: trust200902
@@ -597,7 +597,6 @@ Related protocols: TODO
 
 Related rights: TODO
 
-
 # References not yet referenced
 
 In plain sight, on sexuality, rights and the internet in India, Nepal and Sri Lanka https://www.genderit.org/articles/plain-sight-sexuality-rights-and-internet-india-nepal-and-sri-lanka
@@ -624,6 +623,8 @@ https://luchadoras.mx/wp-content/uploads/2017/12/Informe_ViolenciaEnLineaMexico_
 
 Sephard, N. Big Data and Sexual Surveillance. APC issue papers. 2016. https://www.apc.org/sites/default/files/BigDataSexualSurveillance_0_0.pdf
 
+Crenshaw, K. (2018). Demarginalizing the Intersection of Race and Sex: A Black Feminist Critique of Antidiscrimination Doctrine, Feminist Theory, and Antiracist Politics [1989]. In K. T. Bartlett & R. Kennedy (Eds.), Feminist Legal Theory (1st ed., pp. 57–80; By K. Bartlett). https://doi.org/10.4324/9780429500480-5
+
 # Security Considerations
 
 As this document concerns a research document, there are no security considerations.
@@ -631,7 +632,4 @@ As this document concerns a research document, there are no security considerati
 # IANA Considerations
 
 This document has no actions for IANA.
-
-
-Crenshaw, K. (2018). Demarginalizing the Intersection of Race and Sex: A Black Feminist Critique of Antidiscrimination Doctrine, Feminist Theory, and Antiracist Politics [1989]. In K. T. Bartlett & R. Kennedy (Eds.), Feminist Legal Theory (1st ed., pp. 57–80; By K. Bartlett). https://doi.org/10.4324/9780429500480-5
 
