@@ -31,8 +31,8 @@ author:
 -
        ins: M. Knodel
        name: Mallory Knodel
-       organization: ARTICLE 19
-       email: mallory@article19.org
+       organization: Center for Democracy & Technology
+       email: mknodel@cdt.org
 
 informative:
 
