@@ -1,4 +1,4 @@
-# Building drafts for HRPC
+# Building the draft
 
 Install dependencies:
 
@@ -6,5 +6,5 @@ Install dependencies:
 
 Draft editing workflow:
 
-      $EDITOR draft-glossary.md
-      makey
+      # $EDITOR draft-glossary.md
+      # make

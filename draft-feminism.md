@@ -1,8 +1,8 @@
 ---
 title: Feminism and protocols
 abbrev: Feminism
-docname: draft-guerra-feminism-01
-date: 2019-07-08
+docname: draft-guerra-feminism-02
+date: 2021-11-10
 category: info
 
 ipr: trust200902
@@ -31,8 +31,8 @@ author:
 -
        ins: M. Knodel
        name: Mallory Knodel
-       organization: ARTICLE 19
-       email: mallory@article19.org
+       organization: Center for Democracy & Technology
+       email: mknodel@cdt.org
 
 informative:
 
@@ -203,15 +203,13 @@ This document aims to describe how internet standards, protocols and their imple
 
 # Introduction
 
-This document aims to use a feminist framework to analyse the impacts of internet protocols on society. It is based on a document called The The Feminist Principles of the Internet {{FPI}}, a series of 17 statements with a "gender and sexual rights lens on critical internet-related rights" for the purpose of enabling women's rights movements to explore issues related to internet technology.
+As pointed in {{RFC8280}}, IETF’s purpose of the Internet to be a global network of networks, and the strong commitment to security and privacy in its architectural design have contributed to strengthening the Internet as an enabling environment for human rights. Privacy {{RFC6973}} and Human Rights {{RFC8280}} considerations are valuable tools for decisions on protocols design and deployment, taking into account that a specific technology might be a strong enabler of a specific human right while having an adverse impact on another, as well as that sometimes human rights can be in conflict with each other and in such cases the different affected rights need to be balanced.
 
-These Principles, as well as most of the experiences and learnings of the feminist movement in the digital age, have focused on invisioning a more just internet as a necessary action in building a more just society, namely one that recognizes differences across a variety of lived experience and identity.
+As a complement to those approaches, this document takes a look on how Internet protocols design and standarization processes relate to the differential ability of several groups and communities to exercise their rights on the Internet. For this analysis, a feminist theoretical and practical framework is used to focus, firstly on how the uses of the Internet by individuals and groups are determined by social, economic, cultural and physical differences, and secondly, on the alternatives that some traditionally maginalized groups have found to use, apropriate and implement digital technologies, to ensure that their rights are recognized and protected on the Internet. 
 
-This document must not be understood as a set of rules or recommendations, but as an articulation of key issues with feminist policies and approaches, in order to begin to investigate. That is why this document has two main goals: to identify terminology, both in technical and feminist communities, that can be shared in order to start a dialogue; and to analyze the Feminist Principles based on some of the technical discussions that have been taken into account in the development of protocols.
+In contrast with {{RFC8280}}, based on a a set of Internet related human rights that should be guareteed, this document focuses on the existing structural barriers for some groups and communities to succesfully enjoy their rights on the Internet. Thus, the expected equality declared in {{UDHR}} is not taken for granted; the main focus here is rather on the differences across a variety of lived experiences and identities related to Internet uses. On the other hand, based on a document called The Feminist Principles of the Internet {{FPI}}, this document aims to identify to what extent it is possible to contribute in the inclusion of traditionally maginalized groups inside IETF, as stated in {{RFC7704}} and {{RFC7776}}, regarding different social locations as gender, race and class, among others.
 
-In what follows, this document first describes the feminist theoretical framework from which it proposes to analyze the impacts of the protocols on marginalized and discriminated communities. In the second part, describes the methodology used to connect the framework mentioned above with the Feminist Principles of the Internet. In the third part, characteristics of each principle, as well as the harms on which they are based, the possible points where they connect with IETF work and related rights, are described.
-
-This is still a work in progress so many sections are yet to be done. Coming soon will be added use cases as examples of how protocols and standards can restrict the use of the internet by certain communities and individuals.
+This document must not be understood as a set of rules or recommendations, but as an articulation of technical key issues with feminist policies and approaches. Its goal is to offer a freamework of understanding built by marginalized groups to feed ongoing conversations arround diversity, oppression, and the need to make the IETF a more inclusive enviroment.
 
 ## An intersectional perspective
 
@@ -221,7 +219,7 @@ If someone without enough experience is driving down a road that intersects the 
 
 Arose from black feminist theory, the concept of intersectionality serves to understand how multiple forms of discrimination overlap {{Collins}}. As first pointed by {{Crenshaw}} in the United States, "Black women can experience discrimination in ways that are both similar to and different from those experienced by white women and Black men", so an intersectional approach should be able to recognize this type of discrimination by transcending the one-way perspective with which the justice system, as well as feminist and anti-racist movements, had traditionally operated.
 
-From this proposal, the concept has meant a paradigm shift both in feminist thinking {{Collins}} and movements {{Lorde}}{{Davis}}, and more recently in the design and implementation of public policies {{Mason}}{{Hankivsky}}. The intersectional approach is not focused on the problem of equality but on difference; discrimination is not analyzed in terms of effective access to rights, but the conditions and capacities that people have to access those rights.
+From this proposal, the concept has meant a paradigm shift both in feminist thinking {{Collins}} and movements {{Lorde}}{{Davis}}, and more recently in the design and implementation of public policies {{Mason}}{{Hankivsky}}. The intersectional approach is not focused on the problem of equality but on difference; discrimination is not analyzed in terms of effective access to rights, but the conditions and capacities people have to exercise those rights.
 
 Therefore, an intersectional feminist perspective focuses on social location, the multiple layered identities people live, derived from social relations, history and structures of power through which people can experience both oppression and privilege. These oppressions can be structural and dynamic, determined by gender, race or skin color, class, sexuality, ethnicity, age, language, geographic location, abilities or health conditions, among other factors {{Symington}}.
 
@@ -229,9 +227,9 @@ The concept _matrix of domination_, introduced by {{Collins}} as complementary t
 
 ### Internet as a matrix of domination
 
-The gender and sexual rights lens on critical internet-related rights contained in the Feminist Principles of the Internet has been built bottom up by the feminist movement {{FPI}}, which treats most prominently people who are negatively discriminated against on the basis of their gender and sexuality, but not exclusively. Because the threats to women and queer people, whose bodies and manifestations are already under strong, albeit sometimes invisible, social, cultural and political surveillance, an intersectional feminist analysis makes it possible to recognize how multiple oppressions affect the ways people access, use and participate on the internet.
+The gender and sexual rights lens on critical internet-related rights contained in the Feminist Principles of the Internet has been built bottom up by the feminist movement {{FPI}}, which treats most prominently people who are negatively discriminated against on the basis of their gender and sexuality, but not exclusively. Based on the threats to women and queer people -whose bodies and manifestations are already under strong, albeit sometimes invisible, social, cultural and political surveillance-, an intersectional feminist analysis makes it possible to recognize how multiple oppressions affect the ways people access, use and participate on the internet.
 
-From now on, some of these experiences will be used to identify how the Internet can enable or restrict the possibility of justice and equity among its users. For this purpose, it is useful to understand the internet as a _matrix of domination_ in the sense pointed by {{Collins}}: as an institutional, political, symbolic and cultural context where different intersecting oppressions are shaped and reinforced.
+From now on, some of these experiences will be used to identify how the internet can enable or restrict the possibility of justice and equity among its users. For this purpose, it is useful to understand the internet as a _matrix of domination_ in the sense pointed by {{Collins}}: as an institutional, political, symbolic and cultural context where different intersecting oppressions are shaped and reinforced.
 
 This document addresses the opportunities and vulnerabilities incorporated into Internet protocols for specific, traditionally discriminated groups, on the assumption that these values are inherent in technological design. Through the proposed intersectional perspective, a multilevel description of the factors, processes and social structures that affect different experiences on the Internet is presented below and, based on specific cases, an analysis will be made of how the different protocols intervene in the shaping and reinforcement of intersecting oppressions faced by users on different social locations.
 
@@ -249,7 +247,11 @@ Author Feminista Jones argues in "Reclaiming Our Space: How Black Feminists Are 
 
 Given these myriad expressions of feminism online and feminist movement building online, one thread is perhaps most instructive to this exercise, which we use as the basis for this document: Feminist Principles of the Internet. More about the nature of the complex community that created the Feminist Principles of the Internet can be found at feministinternet.org. The principles, drafted and revised by hundreds of feminists mostly in the global south, highlight historical feminist themes for the digital age in its main categories: access, movements, economy, expression and embodiment.
 
+ a series of 17 statements with a "gender and sexual rights lens on critical internet-related rights" for the purpose of enabling women's rights movements to explore issues related to internet technology.
+
 # Methodology
+
+For the purpose of this document, Feminist Principles will be presented in six main topics. 
 - Research: Archive review, HRPC-RG documents, Use cases (bottom-up, participative process within feministinternet community (TODO))
 
 - Presentation: principle, harm identified, related protocols and rights.
@@ -257,6 +259,78 @@ Given these myriad expressions of feminism online and feminist movement building
 TODO
 
 # Feminist Principles
+
+## Challenge the male gaze
+- Principles: Resistance, Governance, Amplify, Expression, Consent, 
+
+Privacy and data, Violence
+
+social norms
+
+the dominant gender perspective
+
+discourses of morality
+
+womens' and feminism silencing
+
+sexual expression as freedom of expression issue (as political or religious)
+
+women and queers
+
+ethics and politics of consent into the culture design policies and terms of service of internet platforms
+
+- Harms:
+
+
+## Increase participation of women in tech design and decision tables
+- Principles: Usage, Open source, Amplify, Consent, Access, Governance, Children
+
+invite women and young girls to explore technology as a space of creation
+
+creating and experimenting with technology digital safety and security
+
+contribute to the building of the code in order to protect our data and communications
+
+embed users' consent into the very UX design and algorithm of their code
+
+women in developing countries as a stakeholder group with a crucial say
+
+get more feminists and queer activists
+
+bring women's organizations and issues to the discussion table to influence policy and protocol
+
+Harms:
+
+spaces shaped by patriarchy and heteronormativity
+
+increase the number of participation and influence of gender related issues
+
+basklash
+
+silencing (identified in diversity rfcs?)
+
+efforts of state and non-state actors to control surveil regulate and restrict feminist and queer expression on the internet through technology legislation or violence
+
+moral policing censorship and hierarchisation of citizenship and rights
+
+the umbrella term “harmful content” to label expression on female and transgender sexuality
+
+most developers or network operators aren't prioritizing consent
+
+dominant priority on the internet today is to extract as much data as possible with little attention to who is posting data about whom
+
+there hasn't been enough outrage around lack of transparency of privacy breaches conducted by websites and internet corporations
+
+Surveillance as an oppressive tool to control women’s bodies and sexual expression outside of heteronormative discourse
+
+control and restrict women’s bodies speech and activism
+
+Women and queers are especially vulnerable to violations of privacy as they must resist cultural and family practices of surveillance as well
+
+OJO, identify these specific threat models: cyberstalking - phones - the internet social media platforms – email
+
+Technology-related violence against women is part of the same continuum as violence against women offline
+
 
 ## Access
 
@@ -523,7 +597,6 @@ Related protocols: TODO
 
 Related rights: TODO
 
-
 # References not yet referenced
 
 In plain sight, on sexuality, rights and the internet in India, Nepal and Sri Lanka https://www.genderit.org/articles/plain-sight-sexuality-rights-and-internet-india-nepal-and-sri-lanka
@@ -550,6 +623,8 @@ https://luchadoras.mx/wp-content/uploads/2017/12/Informe_ViolenciaEnLineaMexico_
 
 Sephard, N. Big Data and Sexual Surveillance. APC issue papers. 2016. https://www.apc.org/sites/default/files/BigDataSexualSurveillance_0_0.pdf
 
+Crenshaw, K. (2018). Demarginalizing the Intersection of Race and Sex: A Black Feminist Critique of Antidiscrimination Doctrine, Feminist Theory, and Antiracist Politics [1989]. In K. T. Bartlett & R. Kennedy (Eds.), Feminist Legal Theory (1st ed., pp. 57–80; By K. Bartlett). https://doi.org/10.4324/9780429500480-5
+
 # Security Considerations
 
 As this document concerns a research document, there are no security considerations.
@@ -557,7 +632,4 @@ As this document concerns a research document, there are no security considerati
 # IANA Considerations
 
 This document has no actions for IANA.
-
-
-Crenshaw, K. (2018). Demarginalizing the Intersection of Race and Sex: A Black Feminist Critique of Antidiscrimination Doctrine, Feminist Theory, and Antiracist Politics [1989]. In K. T. Bartlett & R. Kennedy (Eds.), Feminist Legal Theory (1st ed., pp. 57–80; By K. Bartlett). https://doi.org/10.4324/9780429500480-5
 
